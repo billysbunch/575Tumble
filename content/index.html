@@ -6,129 +6,185 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
         body {
-            font-family: "open sans", sans-serif;
-            background-color: #030006;
+            margin: 0;
+            font-family: axis;
+            background-image: url("575-tumbling-chrome-cropped.png");
         }
 
-        a {
+        .topnav {
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .topnav a {
+            float: right;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .active {
+            background-color: blueviolet;
             color: white;
         }
 
-        .container nav {
-            width: 100%;
-            height: 100px;
-            background: #030006;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 999;
+        .topnav .icon {
+            display: none;
         }
 
-        .container nav ul {
-            width: 100%;
-            height: 100%;
-            margin: auto;
-            list-style: none;
-            transition: all 0.5s ease;
+        .dropdown {
+            float: right;
+            overflow: hidden;
         }
 
-        .container nav ul li {
-            width: 20%;
-            float: left;
-            text-align: center;
-            color: magenta;
-            padding: 12px 0px;
-            font-size: 20px;
-            font-weight: bold;
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: all 0.5s ease;
-            position: relative;
+        .dropdown .dropbtn {
+            font-size: 17px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: axis;
+            margin: 0;
         }
 
-        .mainGraphic {
-            position: relative;
-            margin-top: 10%;
-            margin-left: 15%;
-        }
-
-        .container nav ul li:hover {
-            color: #ea3b50;
-            box-shadow: inset 0 4px #ea3b50;
-        }
-
-        .container nav ul li ul.sub-nav {
+        .dropdown-content {
+            display: none;
             position: absolute;
-            background: #444759;
-            width: 100%;
-            height: 250px;
-            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.14), -1px 0px 1px rgba(0, 0, 0, 0.14);
-            top: 75px;
-            left: 0;
-            visibility: hidden;
-            opacity: 0;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
         }
 
-        .container nav ul li ul.sub-nav li {
-            color: #eee;
-            font-size: 14px;
-            width: 100%;
-            padding: 15px 0;
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
         }
 
-        .container nav ul li ul.sub-nav li:hover {
-            color: #ea3b50;
-            box-shadow: 0 0;
+        .topnav a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: #555;
+            color: white;
         }
 
-        .container nav ul li:hover ul.sub-nav {
-            visibility: visible;
-            opacity: 1;
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            color: black;
         }
 
-        .img-responsive {
-            height: auto;
-            width: auto;
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .topnav a:not(:first-child),
+            .dropdown .dropbtn {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .topnav.responsive .dropdown {
+                float: none;
+            }
+
+            .topnav.responsive .dropdown-content {
+                position: relative;
+            }
+
+            .topnav.responsive .dropdown .dropbtn {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }
+
+        .logo {
+            width: 100px;
+
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container">
-
-        <nav>
-
-            <ul>
-                <li><img width="75px" class="logo" src="../images/logo-nbg.png"></li>
-                <li><a href="./index.html">home</a></li>
-                <li>calendar</li>
-                <li>classes
-                    <ul class="sub-nav">
-                        <li><a href=../images/classes.jpg>class 1</a></li>
-                        <li><a href=../images/classes.jpg>class 2</a></li>
-                        <li><a href=../images/classes.jpg>class 3</a></li>
-                        <li><a href=../images/classes.jpg>class 4</a></li>
-                    </ul>
-                </li>
-                <li>about
-                    <ul class="sub-nav">
-                        <li><a href="./mystory.html">my story</a></li>
-                        <li><a href="../images/champions.png">champions</a></li>
-                        <li><a href="#">coaches</a></li>
-                    </ul>
-                </li>
-
-        </nav>
-        <div class="mainGraphic"><img width="800px" src="../images/cover-royalty-small.png"></div>
+    <div class="navbar">
+        <div clas="logo_div">
+            <img src="logo-cropped.png" class="logo">
+        </div>
     </div>
-
+    <div class="topnav" id="myTopnav">
+        <a href="#contact">CONTACTS</a>
+        <div class="dropdown">
+            <button class="dropbtn">CLASSES</button>
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="tiny tumblers.png">TINY TUMBLERS</a>
+                <a href="beginners-intermediate.png">BEGINNERS TO<br>
+                    INTERMEDIATE</a>
+                <a href="boys 1.png">BOYS</a>
+                <a href="back-handspring.png">BACK HANDSPRING</a>
+                <a href="cheer class.png">CHEER CLASS</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">ABOUT
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">FORMS</a>
+                <a href="#">HOW DO I GET<br>
+                    STARTED?</a>
+                <a href="about-LaToya.png">STAFF</a>
+                <a href="#">TESTIMONIALS</a>
+            </div>
+        </div>
+        <a href="#news">NEWS</a>
+        <a href="index.html" class="active">HOME</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 
 </html>
