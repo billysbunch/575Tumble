@@ -9,7 +9,7 @@
         body {
             margin: 0;
             font-family: axis;
-            background-image: url("575-tumbling-chrome-cropped.png");
+            background-image: url("575-tumble-smaller.png");
         }
 
         .topnav {
@@ -132,7 +132,6 @@
 
         .logo {
             width: 100px;
-
         }
     </style>
 </head>
@@ -171,20 +170,21 @@
                 <a href="#">TESTIMONIALS</a>
             </div>
         </div>
-        <a href="#news">NEWS</a>
-        <a href="index.html" class="active">HOME</a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
+        <div>
+            <a href="#news">NEWS</a>
+            <a href="index.html" class="active">HOME</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
             }
-        }
-    </script>
+        </script>
 </body>
 
 </html>
