@@ -38,8 +38,8 @@
         }
 
         .container nav ul li {
-            width: 20%;
-            float: left;
+            width: 7%;
+            float: right;
             text-align: center;
             color: magenta;
             padding: 12px 0px;
@@ -79,7 +79,7 @@
             color: #eee;
             font-size: 14px;
             width: 100%;
-            padding: 15px 0;
+            padding: 15px 0px;
         }
 
         .container nav ul li ul.sub-nav li:hover {
@@ -99,9 +99,15 @@
 
         .logo {
             position: absolute;
-            left: 10%;
             width: 150px;
+        }
 
+        .list {
+            float: right;
+        }
+
+        .container nav ul li:hover ul.sub-nav a {
+            text-decoration: none;
         }
     </style>
 </head>
@@ -109,38 +115,38 @@
 </head>
 
 <body>
+    <div class="container">
 
-    <body>
+        <nav>
+            <img class="logo" src="../images/logo-nbg.png">
 
-        <div class="container">
-
-            <nav>
-
-                <ul>
-                    <li><img class="logo" src="../images/logo-nbg.png"></li>
-                    <li><a href="index.html">home</li></a>
-                    <li>calendar</li>
-                    <li>classes
-                        <ul class="sub-nav">
-                            <li><a href="tiny-tumblrs.html">Tiny Tumblers</a></li>
-                            <li><a href="beginner-to-intermediate.html">Beginners-Intermediate</a></li>
-                            <li><a href="boys.html">Boys</a></li>
-                            <li><a href="back-handspring.html">back-handspring</a></li>
-                            <li><a href="mystory.html">Cheer class</a></li>
-                        </ul>
-                    </li>
-                    <li>about
-                        <ul class="sub-nav">
-                            <li><a href="../images/Artboard 1.png">my story</a></li>
-                            <li><a href="../images/champions.png">champions</a></li>
-                            <li><a href="#">coaches</a></li>
-                        </ul>
-                    </li>
-            </nav>
-            <div class="header"></div>
-        </div>
+            <ul>
+                <li>Contacts</li>
+                <li>Calendar</li>
+                <li>Classes
+                    <ul class="sub-nav">
+                        <li><a href="tiny-tumblrs.html">Tiny Tumblers</a></li>
+                        <li><a href="beginner-to-intermediate.html">Beginners-Intermediate</a></li>
+                        <li><a href="boys.html">Boys</a></li>
+                        <li><a href="back-handspring.html">back-handspring</a></li>
+                        <li><a href="mystory.html">Cheer class</a></li>
+                    </ul>
+                </li>
+                <li>about
+                    <ul class="sub-nav">
+                        <li><a href="../images/Artboard 1.png">my story</a></li>
+                        <li><a href="../images/champions.png">champions</a></li>
+                        <li><a href="#">coaches</a></li>
+                    </ul>
+                <li>news</li>
+                <li>home</li>
+                </li>
+            </ul>
+        </nav>
+        <div class="header"></div>
 
 
-    </body>
+    </div>
+</body>
 
 </html>
