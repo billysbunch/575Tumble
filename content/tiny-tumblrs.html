@@ -51,10 +51,18 @@
             cursor: pointer;
             transition: all 0.5s ease;
             position: relative;
+            text-decoration: none;
+
         }
 
+        .container nav ul li a {
+            color: magenta;
+            text-decoration: none;
+
+        }
+
+
         .container .header {
-            background: url("../images/cover-royalty.png");
             background-size: cover;
             min-height: 900px;
             margin-top75px;
@@ -136,13 +144,22 @@
         }
 
         .column {
-            flex: 50%;
-            padding: 10px;
-            top: -1000;
+            float: left;
+            width: 50%;
+            height: 300px;
+            background-color: #aaa;
         }
 
         .row {
             position: absolute;
+        }
+
+        .row .column h2 ul li p {
+            position: relative;
+        }
+
+        .container nav ul li ul li a {
+            text-decoration: none;
         }
     </style>
 </head>
@@ -164,7 +181,7 @@
                         <li><a href="beginner-to-intermediate.html">Beginners-Intermediate</a></li>
                         <li><a href="boys.html">Boys</a></li>
                         <li><a href="back-handspring.html">back-handspring</a></li>
-                        <li><a href="mystory.html">Cheer class</a></li>
+                        <li><a href="cheer.html">Cheer class</a></li>
                     </ul>
                 </li>
                 <li>about
@@ -214,7 +231,7 @@
             chassés.<br> Accessories such as foam blocks, bean bags, and cones are used as teaching aids.</p>
         <h2 style="color:white; position: relative; left:80px; top:-500px"> 4 – 5 Year Old Gymnastics</h2>
         <p style="color:white; position: relative; left:80px; top:-500px">
-            This 55-minute class for boys and girls teaches basic gymnastics skills on vault, bars, balance beam, floor,
+            This 55-minute class for boys and girls teaches basic tumbling skills on vault, bars, balance beam, floor,
             and
             trampoline, while<br> using stations and accessories such as incline-mats, folding-mats, donut-mats and
             barrels.
@@ -235,7 +252,7 @@
         </p>
     </div>
     <div class="row">
-        <div class="column" style="background-color: #aaa; float:left; width: 50%; height: 300px;">
+        <div class="column">
             <h2>PARENT & ME PRICING</h2>
             <ul>
                 <li>1 Class A Week</li>
@@ -245,7 +262,7 @@
                 <li>Private lesson</li>
                 <p>$40.00 for a 30 min session</p>
         </div>
-        <div class="column" style="background-color: #bbb;float:left; width: 50%;">
+        <div class="column">
             <h2>TINY TUMBLERS</h2>
             <ul>
                 <li>1 Class A Week</li>

@@ -13,7 +13,7 @@
 
         body {
             font-family: "open sans", sans-serif;
-            background-image: url("cover-royalty.png");
+            background-image: url(../content/cover-royalty.png);
         }
 
         a {
@@ -50,6 +50,12 @@
             cursor: pointer;
             transition: all 0.5s ease;
             position: relative;
+            text-decoration: none;
+        }
+
+        .container nav ul li a {
+            color: magenta;
+            text-decoration: none;
         }
 
         .container .header {
@@ -110,6 +116,10 @@
         .container nav ul li:hover ul.sub-nav a {
             text-decoration: none;
         }
+
+        .container nav ul li ul li a {
+            text-decoration: none;
+        }
     </style>
 </head>
 
@@ -130,7 +140,7 @@
                         <li><a href="beginner-to-intermediate.html">Beginners-Intermediate</a></li>
                         <li><a href="boys.html">Boys</a></li>
                         <li><a href="back-handspring.html">back-handspring</a></li>
-                        <li><a href="mystory.html">Cheer class</a></li>
+                        <li><a href="cheer.html">Cheer class</a></li>
                     </ul>
                 </li>
                 <li>about
@@ -140,7 +150,7 @@
                         <li><a href="#">coaches</a></li>
                     </ul>
                 <li>news</li>
-                <li>home</li>
+                <li><a href="index.html">home</a></li>
                 </li>
             </ul>
         </nav>
