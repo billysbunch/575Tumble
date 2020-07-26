@@ -144,22 +144,23 @@
         }
 
         .column {
-            float: left;
-            width: 50%;
-            height: 300px;
-            background-color: #aaa;
-        }
-
-        .row {
             position: absolute;
+            top: 1500px;
+            border: 3px;
+            border: solid blue;
+            background-color: #aaa;
+            float: left;
         }
 
-        .row .column h2 ul li p {
-            position: relative;
+        .times {
+            width: 700px;
+            float: right;
+            margin-top: -1200px;
         }
 
-        .container nav ul li ul li a {
-            text-decoration: none;
+        .fb-fun {
+            float: right;
+            margin-top: -1100px;
         }
     </style>
 </head>
@@ -199,6 +200,7 @@
     </div>
     <img class="tiny-t" src="../images/tiny-tumblers-chrome-small.png">
     <img class="tumblers" src="../images/tiny-t's.png">
+    <img class="times" src="../images/tiny-tumblers.png">
     <div class="text">
         <h2 style="color:white; position: relative; left:80px; top:-600px">Parent and Me-Walking through 3 Years<br>
         </h2>
@@ -229,7 +231,7 @@
             are used to teach stationary balance skills, along with walking forward and backward, kicks, jumps, dip
             walks and
             chassés.<br> Accessories such as foam blocks, bean bags, and cones are used as teaching aids.</p>
-        <h2 style="color:white; position: relative; left:80px; top:-500px"> 4 – 5 Year Old Gymnastics</h2>
+        <h2 style="color:white; position: relative; left:80px; top:-500px"> 4 – 5 Year Old Tumbling</h2>
         <p style="color:white; position: relative; left:80px; top:-500px">
             This 55-minute class for boys and girls teaches basic tumbling skills on vault, bars, balance beam, floor,
             and
@@ -261,10 +263,16 @@
                 <p>$100.oo per month</p>
                 <li>Private lesson</li>
                 <p>$40.00 for a 30 min session</p>
+            </ul>
         </div>
-        <div class="column">
+        <div class="column" style=" position: absolute;
+         top: 1700px;
+        border: solid blue;
+        background-color: #bbb;
+        grid-area: right;
+        transform: translate(300px, -200px)">
             <h2>TINY TUMBLERS</h2>
-            <ul>
+            <ul class="t-t">
                 <li>1 Class A Week</li>
                 <p>$55.oo per month</p>
                 <li>2 Classes A Week</li>
@@ -272,14 +280,12 @@
                 <li>Private lesson</li>
                 <p>$40.00 for a 30 min session</p>
                 <h3>$20.00 one time registration fee</h3>
+            </ul>
         </div>
     </div>
-
-
-
-
-
-
+    <div class="fb-fun">
+        <h2><a href="https://www.facebook.com/575tumbling/photos/">FACEBOOK FUN</h2></a>
+    </div>
 </body>
 
 </html>
