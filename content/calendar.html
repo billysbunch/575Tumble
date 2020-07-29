@@ -4,8 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calendar</title>
     <style>
+        .container {
+            max-width: 1400px;
+            margin: auto;
+            font-family: sans-serif;
+            top: -1000;
+            position: relative;
+            top: -350px;
+        }
+
+        .month {
+            text-align: center;
+            background: purple;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+            color: white;
+            padding: 25px;
+            border: 1px solid skyblue;
+        }
+
+        th {
+            width: 100%;
+            table-layout: fixed;
+            text-align: center;
+            font-size: 17px;
+            border-collapse: collapse;
+            border: 1px;
+            border: 1px solid skyblue;
+            background-color: red;
+            color: white;
+            padding: 15px;
+            height: 50px;
+        }
+
+        td {
+            background: #3c8a4e;
+            padding: 15px;
+            height: 50px;
+        }
+
+        td:hover {
+            background: orange;
+        }
+
+        tr {
+            padding: 15px;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -13,6 +60,7 @@
 
         body {
             font-family: "open sans", sans-serif;
+            background-color: white;
         }
 
         a {
@@ -22,7 +70,7 @@
         .container nav {
             width: 100%;
             height: 100px;
-            background: gray;
+            background: black;
             position: fixed;
             top: 0;
             left: 0;
@@ -38,8 +86,8 @@
         }
 
         .container nav ul li {
-            width: 20%;
-            float: left;
+            width: 7%;
+            float: right;
             text-align: center;
             color: magenta;
             padding: 12px 0px;
@@ -49,10 +97,16 @@
             cursor: pointer;
             transition: all 0.5s ease;
             position: relative;
+            text-decoration: none;
+        }
+
+        .container nav ul li a {
+            color: magenta;
+            text-decoration: none;
         }
 
         .container .header {
-            background: url("../images/cover-royalty.png");
+            background: url();
             background-size: cover;
             min-height: 900px;
             margin-top75px;
@@ -79,7 +133,7 @@
             color: #eee;
             font-size: 14px;
             width: 100%;
-            padding: 15px 0;
+            padding: 15px 0px;
         }
 
         .container nav ul li ul.sub-nav li:hover {
@@ -96,39 +150,438 @@
             height: auto;
             width: auto;
         }
+
+        .logo {
+            position: absolute;
+            width: 150px;
+        }
+
+        .list {
+            float: right;
+        }
+
+        .container nav ul li:hover ul.sub-nav a {
+            text-decoration: none;
+        }
+
+        .container nav ul li ul li a {
+            text-decoration: none;
+        }
     </style>
 </head>
 
 <body>
-
     <div class="container">
-
         <nav>
-
+            <img class="logo" src="../images/logo-nbg.png">
             <ul>
-                <li><img width="75px" class="logo" src="../images/logo-nbg.png"></li>
-                <li>home</li>
-                <li>calendar</li>
-                <li>classes
+                <li>Contacts</li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li>Classes
                     <ul class="sub-nav">
-                        <li><a href=../images/classes.jpg>class 1</a></li>
-                        <li><a href=../images/classes.jpg>class 2</a></li>
-                        <li><a href=../images/classes.jpg>class 3</a></li>
-                        <li><a href=../images/classes.jpg>class 4</a></li>
+                        <li><a href="tiny-tumblrs.html">Tiny Tumblers</a></li>
+                        <li><a href="beginner-to-intermediate.html">Beginners-Intermediate</a></li>
+                        <li><a href="boys.html">Boys</a></li>
+                        <li><a href="back-handspring.html">back-handspring</a></li>
+                        <li><a href="cheer.html">Cheer class</a></li>
                     </ul>
                 </li>
-                <li>about
+                <li><a href="index.html">About</a>
                     <ul class="sub-nav">
-                        <li><a href="../images/Artboard 1.png">my story</a></li>
-                        <li><a href="../images/champions.png">champions</a></li>
+                        <li><a href="about.html">my story</a></li>
+                        <li><a href="champions.html">champions</a></li>
                         <li><a href="#">coaches</a></li>
                     </ul>
+                <li>news</li>
+                <li><a href="index.html">home</a></li>
                 </li>
-
+            </ul>
         </nav>
         <div class="header"></div>
-    </div>
+        <div class="container">
+            <div class="month">
+                <strong>
+                    August
+                </strong>
+                <br>
+                <strong>
+                    2017
+                </strong>
+            </div>
+            <table style="  width: 100%;
+        table-layout: fixed;
+        text-align: center;
+        font-size: 17px;
+        border-collapse: collapse;
+        border: 1px;
+        border: 1px solid skyblue;">
+                <tr style="  width: 100%;
+            table-layout: fixed;
+            text-align: center;
+            font-size: 17px;
+            border-collapse: collapse;
+            border: 1px;
+            border: 1px solid skyblue;
+        ">
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+                <tr style="  width: 100%;
+            table-layout: fixed;
+            text-align: center;
+            font-size: 17px;
+            border-collapse: collapse;
+            border: 1px;
+            border: 1px solid skyblue;
+        ">
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;"></td>
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;"></td>
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;"></td>
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;"></td>
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;"></td>
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;"></td>
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;">1</td>
+                <tr style="  width: 100%;
+            table-layout: fixed;
+            text-align: center;
+            font-size: 17px;
+            border-collapse: collapse;
+            border: 1px;
+            border: 1px solid skyblue;
+        ">
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;">2</td>
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;">3</td>
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;">4</td>
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;">5</td>
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;">6</td>
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;">7</td>
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;">8</td>
+                <tr style="  width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;
+        ">
+                    <td style="width: 100%;
+                 table-layout: fixed;
+                 text-align: center;
+                 font-size: 17px;
+                 border-collapse: collapse;
+                 border: 1px;
+                 border: 1px solid skyblue;">9</td>
+                    <td style="width: 100%;
+                 table-layout: fixed;
+                 text-align: center;
+                 font-size: 17px;
+                 border-collapse: collapse;
+                 border: 1px;
+                 border: 1px solid skyblue;">10</td>
+                    <td style="width: 100%;
+                 table-layout: fixed;
+                 text-align: center;
+                 font-size: 17px;
+                 border-collapse: collapse;
+                 border: 1px;
+                 border: 1px solid skyblue;">11</td>
+                    <td style="width: 100%;
+                 table-layout: fixed;
+                 text-align: center;
+                 font-size: 17px;
+                 border-collapse: collapse;
+                 border: 1px;
+                 border: 1px solid skyblue;">12</td>
+                    <td style="width: 100%;
+                 table-layout: fixed;
+                 text-align: center;
+                 font-size: 17px;
+                 border-collapse: collapse;
+                 border: 1px;
+                 border: 1px solid skyblue;">13</td>
+                    <td style="width: 100%;
+                 table-layout: fixed;
+                 text-align: center;
+                 font-size: 17px;
+                 border-collapse: collapse;
+                 border: 1px;
+                 border: 1px solid skyblue;">14</td>
+                    <td style="width: 100%;
+                 table-layout: fixed;
+                 text-align: center;
+                 font-size: 17px;
+                 border-collapse: collapse;
+                 border: 1px;
+                 border: 1px solid skyblue;">15</td>
+                <tr style="  width: 100%;
+            table-layout: fixed;
+            text-align: center;
+            font-size: 17px;
+            border-collapse: collapse;
+            border: 1px;
+            border: 1px solid skyblue;
+        ">
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;">16</td>
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;">17</td>
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;">18</td>
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;">19</td>
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;">20</td>
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;">21</td>
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;">22</td>
+                <tr style="  width: 100%;
+            table-layout: fixed;
+            text-align: center;
+            font-size: 17px;
+            border-collapse: collapse;
+            border: 1px;
+            border: 1px solid skyblue;
+        ">
+                    <td style="width: 100%;
+                  table-layout: fixed;
+                  text-align: center;
+                  font-size: 17px;
+                  border-collapse: collapse;
+                  border: 1px;
+                  border: 1px solid skyblue;">23</td>
+                    <td style="width: 100%;
+                  table-layout: fixed;
+                  text-align: center;
+                  font-size: 17px;
+                  border-collapse: collapse;
+                  border: 1px;
+                  border: 1px solid skyblue;">24</td>
+                    <td style="width: 100%;
+                  table-layout: fixed;
+                  text-align: center;
+                  font-size: 17px;
+                  border-collapse: collapse;
+                  border: 1px;
+                  border: 1px solid skyblue;">25</td>
+                    <td style="width: 100%;
+                  table-layout: fixed;
+                  text-align: center;
+                  font-size: 17px;
+                  border-collapse: collapse;
+                  border: 1px;
+                  border: 1px solid skyblue;">26</td>
+                    <td style="width: 100%;
+                  table-layout: fixed;
+                  text-align: center;
+                  font-size: 17px;
+                  border-collapse: collapse;
+                  border: 1px;
+                  border: 1px solid skyblue;">27</td>
+                    <td style="width: 100%;
+                  table-layout: fixed;
+                  text-align: center;
+                  font-size: 17px;
+                  border-collapse: collapse;
+                  border: 1px;
+                  border: 1px solid skyblue;">28</td>
+                    <td style="width: 100%;
+                  table-layout: fixed;
+                  text-align: center;
+                  font-size: 17px;
+                  border-collapse: collapse;
+                  border: 1px;
+                  border: 1px solid skyblue;">29</td>
 
+                </tr>
+                <tr style="  width: 100%;
+            table-layout: fixed;
+            text-align: center;
+            font-size: 17px;
+            border-collapse: collapse;
+            border: 1px;
+            border: 1px solid skyblue;
+        ">
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;">30</td>
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;">31</td>
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;"></td>
+                    </td>
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;"></td>
+                    </td>
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;"></td>
+                    </td>
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;"></td>
+                    </td>
+                    <td style="width: 100%;
+                table-layout: fixed;
+                text-align: center;
+                font-size: 17px;
+                border-collapse: collapse;
+                border: 1px;
+                border: 1px solid skyblue;"></td>
+                </tr>
+            </table>
+        </div>
 </body>
 
 </html>
