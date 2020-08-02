@@ -42,9 +42,9 @@
             width: 7%;
             float: right;
             text-align: center;
-            color: magenta;
+            color: black;
             padding: 12px 0px;
-            font-size: 20px;
+            font-size: 10px;
             font-weight: bold;
             text-transform: uppercase;
             cursor: pointer;
@@ -54,7 +54,7 @@
         }
 
         .container nav ul li a {
-            color: magenta;
+            color: black;
             text-decoration: none;
         }
 
@@ -97,6 +97,12 @@
         .container nav ul li:hover ul.sub-nav {
             visibility: visible;
             opacity: 1;
+        }
+
+        .container nav ul li ul li a {
+            text-decoration: none;
+            color: magenta;
+            font-size: 10px;
         }
 
         .img-responsive {
@@ -194,7 +200,7 @@
                 <li><a href="calendar.html">Calendar</a></li>
 
                 <li>Classes
-                    <ul class="sub-nav">
+                    <ul style="top:25px;" class="sub-nav">
                         <li><a href="tiny-tumblrs.html">Tiny Tumblers</a></li>
                         <li><a href="beginner-to-intermediate.html">Beginners-Intermediate</a></li>
                         <li><a href="boys.html">Boys</a></li>
@@ -203,7 +209,7 @@
                     </ul>
                 </li>
                 <li><a href="index.html">About</a>
-                    <ul class="sub-nav">
+                    <ul style="height: 110px; top:25px" class="sub-nav">
                         <li><a href="about.html">my story</a></li>
                         <li><a href="champions.html">champions</a></li>
                     </ul>
