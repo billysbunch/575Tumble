@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
     <style>
         * {
@@ -14,7 +15,6 @@
 
         body {
             font-family: "open sans", sans-serif;
-            background-image: ;
         }
 
         .myslides {
@@ -31,8 +31,8 @@
 
         .container nav {
             width: 100%;
-            height: 100px;
-            background: ;
+            height: 50px;
+            background: linear-gradient(to right, pink, purple);
             position: fixed;
             top: 0;
             left: 0;
@@ -160,7 +160,7 @@
             max-width: 400px;
             position: relative;
             margin: auto;
-            top: -1700px;
+            top: -1800px;
             left: 600px;
         }
 
@@ -194,7 +194,7 @@
             display: inline-block;
             transition: background-color 0.6s ease;
             position: relative;
-            top: -1700px;
+            top: -1800px;
             left: 600px;
         }
 
@@ -242,7 +242,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <header class="container">
         <nav>
             <img class="logo" src="../images/logo-nbg.png">
             <ul>
@@ -270,11 +270,10 @@
         </nav>
         <div class="header"></div>
         <img class="bg-image" src="../images/hp-white-bg.png">
-        <a href="birthday.htm"><img class="bd" src="../images/birthday-party.jpg">
+        <a href="birthday.html"><img class="bd" src="../images/birthday-party.jpg">
             <div class="text-on-bd"><strong>Birthday parties comming soon</strong></div>
         </a>
-
-    </div>
+    </header>
     <div class="slideshow-container">
 
         <div class="mySlides fade">
@@ -304,13 +303,8 @@
             <img src="../images/6.png" style="width:100%">
             <div class="text">WORK HARD!!!</div>
         </div>
-
-
-
-
     </div>
     <br>
-
     <div style="text-align:center">
         <span class="dot"></span>
         <span class="dot"></span>
@@ -318,6 +312,7 @@
         <span class="dot"></span>
         <span class="dot"></span>
     </div>
+
 
     <script>
         var slideIndex = 0;
