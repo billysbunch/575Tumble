@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
     <style>
         * {
@@ -14,6 +15,14 @@
 
         body {
             font-family: "open sans", sans-serif;
+        }
+
+        .myslides {
+            display: none;
+        }
+
+        img {
+            vertical-align: middle;
         }
 
         a {
@@ -76,17 +85,17 @@
             width: 100%;
             height: 250px;
             box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.14), -1px 0px 1px rgba(0, 0, 0, 0.14);
-            top: 75px;
+            top: 100px;
             left: 0;
             visibility: hidden;
             opacity: 0;
         }
 
         .container nav ul li ul.sub-nav li {
-            color: #eee;
             font-size: 14px;
             width: 100%;
             padding: 15px 0px;
+
         }
 
         .container nav ul li ul.sub-nav li:hover {
@@ -97,12 +106,6 @@
         .container nav ul li:hover ul.sub-nav {
             visibility: visible;
             opacity: 1;
-        }
-
-        .container nav ul li ul li a {
-            text-decoration: none;
-            color: magenta;
-            font-size: 10px;
         }
 
         .img-responsive {
@@ -125,66 +128,144 @@
 
         .container nav ul li ul li a {
             text-decoration: none;
+            color: magenta;
+            font-size: 10px;
         }
 
-        input[type=text],
-        select,
-        textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            margin-top: 6px;
-            margin-bottom: 16px;
-            resize: vertical;
-        }
-
-        input[type=submit] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        input[type=submit]:hover {
-            background-color: #45a049;
-        }
-
-        .talk {
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding: 20px;
-        }
-
-        .info {
+        .bg-image {
             position: relative;
+            top: -780px;
+            text-decoration: none;
+
+        }
+
+        .bd {
+            position: relative;
+            top: -1800px;
+            left: 1290px;
+            width: 350px;
+        }
+
+        .text-on-bd {
+            position: relative;
+            top: -1900px;
+            left: 1320px;
+            font-size: 20px;
+        }
+
+        .sub-nav {
+            color: magenta;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 400px;
+            position: relative;
+            margin: auto;
+            top: -1800px;
+            left: 600px;
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+            position: relative;
+            top: -1800px;
+            left: 600px;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 10s;
+            animation-name: fade;
+            animation-duration: 2s;
+        }
+
+        .drop {
+            position: relative;
+            width: 200px;
             top: -1300px;
             left: 1200px;
         }
 
-        .fun {
+        .drop2 {
             position: relative;
-            top: -1300px;
-            left: 1100px;
-            width: 600px;
+            width: 200px;
+            top: -1500px;
+            left: 1500px;
         }
 
-        .fun1 {
+        .drop3 {
             position: relative;
+            width: 200px;
             top: -1250px;
-            left: -500px;
-            width: 700px;
+            left: 1200px;
+        }
+
+        .drop4 {
+            position: relative;
+            width: 200px;
+            top: -1400px;
+            left: 1500px;
         }
 
 
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
 
-        .map {
-            position: relative;
-            left: -100px;
-            top: 50px;
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
         }
     </style>
 </head>
@@ -192,16 +273,16 @@
 </head>
 
 <body>
-    <div class="container">
+    <header class="container">
         <nav>
             <img class="logo" src="../images/logo-nbg.png">
             <ul>
                 <li><a href="proshop.html">Pro. shop</a></li>
-                <li><a href="contacts.html">contacts</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
                 <li><a href="calendar.html">Calendar</a></li>
 
                 <li>Classes
-                    <ul style="top:50px;" class="sub-nav">
+                    <ul style="top: 50px;" class="sub-nav">
                         <li><a href="tiny-tumblrs.html">Tiny Tumblers</a></li>
                         <li><a href="beginner-to-intermediate.html">Beginners-Intermediate</a></li>
                         <li><a href="boys.html">Boys</a></li>
@@ -209,55 +290,33 @@
                         <li><a href="cheer.html">Cheer class</a></li>
                     </ul>
                 </li>
-                <li>About
+                <li><a href="index.html">About</a>
                     <ul style="height: 110px; top:50px" class="sub-nav">
                         <li><a href="about.html">my story</a></li>
                         <li><a href="champions.html">champions</a></li>
                     </ul>
-                </li>
                 <li><a href="news.html">News</a></li>
                 <li><a href="index.html">home</a></li>
                 </li>
             </ul>
         </nav>
         <div class="header"></div>
-        <h2 style="position: relative; top:-720px; align-items: center;">SEND US A MESSAGE</h2>
-        <div class="talk" style="position: relative; top:-700px; width: 1000px;">
-            <form action="/action_page.php">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-                <label for="country">Subject</label>
-                <textarea id="country" name="country" placeholder="subject.."></textarea>
-
-                <label for="subject">Your Message</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-                <input type="submit" value="Submit">
-            </form>
+        <img class="bg-image" src="../images/background-home-pg2.png">
         </div>
-        <div class="info">
-            <h1>LOCATION</h1>
-            <p>105 N. Maim<br>
-                Lovington, NM 88260</p>
-            <br>
-            <h1>CONTACT INFO</h1>
-            <p>(575)-704-1016<br>
-                info @ 575Tumble.com</p>
-            <button type="button" onclick="alert('Hello World')">Down load our app</button>
-            <p class="map"><iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.1006420750964!2d-103.35114918605606!3d32.94835218253906!2m3!
-                    1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86fcdb49638f3a91%3A0x88fb60637d46c28!2s575%20Tumbling!5e0!3m2!1sen!2sus!4v1596296554907!5m2!1sen!2sus"
-                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0"></iframe></p>
-        </div>
-        <img class="fun" src="../images/3.jpg">
-        <img class="fun1" src="../images/4.jpg">
+        <section id=t-shirts>
+            <article>
+                <img class="drop" src="../images/t-shirt-1.jpg"></article>
+            <article>
+                <img class="drop2" src="../images/t-shirt-2.jpg"></article>
+            <article>
+                <img class="drop3" src="../images/t-shirt-3.jpg"></article>
+            <article>
+                <img class="drop4" src="../images/t-shirt-4.jpg"></article>
+        </section>
 
-    </div>
+
+
+
 </body>
 
 </html>
