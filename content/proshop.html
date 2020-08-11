@@ -33,8 +33,8 @@
             width: 100%;
             height: 50px;
             background: linear-gradient(to right, pink, purple);
-            position: fixed;
-            top: 0;
+            position: relative;
+            top: 50px;
             left: 0;
             z-index: 999;
         }
@@ -60,6 +60,7 @@
             transition: all 0.5s ease;
             position: relative;
             text-decoration: none;
+            top: -150px;
         }
 
         .container nav ul li a {
@@ -114,8 +115,9 @@
         }
 
         .logo {
-            position: absolute;
             width: 150px;
+            position: relative;
+            top: -49px;
         }
 
         .list {
@@ -134,7 +136,7 @@
 
         .bg-image {
             position: relative;
-            top: -780px;
+            top: -800px;
             text-decoration: none;
 
         }
@@ -216,29 +218,137 @@
             position: relative;
             width: 200px;
             top: -1300px;
-            left: 1200px;
+            left: 1100px;
         }
 
         .drop2 {
             position: relative;
             width: 200px;
-            top: -1500px;
-            left: 1500px;
+            top: -1575px;
+            left: 1450px;
         }
 
         .drop3 {
             position: relative;
             width: 200px;
-            top: -1250px;
-            left: 1200px;
+            top: -1400px;
+            left: 1100px;
         }
 
         .drop4 {
             position: relative;
             width: 200px;
+            top: -1600px;
+            left: 1450px;
+        }
+
+        .best-t {
+            position: relative;
+            top: -1500px;
+            left: 1150px;
+            font-size: 50px;
+            color: purple;
+
+        }
+
+        .best {
+            position: relative;
             top: -1400px;
+            left: 1350px;
+            font-size: 25px;
+            color: purple;
+        }
+
+        .productarticleprice1 {
+            position: relative;
+            top: -1300px;
+            left: 1185px;
+        }
+
+        .addtocartbutton1 {
+            position: relative;
+            top: -1300px;
+            left: 1175px;
+        }
+
+        .productarticleprice2 {
+            position: relative;
+            top: -1575px;
+            left: 1520px;
+        }
+
+        .addtocartbutton2 {
+            position: relative;
+            top: -1576px;
+            left: 1509px;
+        }
+
+        .productarticleprice3 {
+            position: relative;
+            top: -1318px;
+            left: 1190px;
+        }
+
+        .addtocartbutton3 {
+            position: relative;
+            top: -1320px;
+            left: 1175px;
+        }
+
+        .productarticleprice4 {
+            position: relative;
+            top: -1595px;
+            left: 1520px;
+        }
+
+        .addtocartbutton4 {
+            position: relative;
+            top: -1595px;
             left: 1500px;
         }
+
+        .we {
+            position: relative;
+            top: -1596px;
+            left: 170px;
+            color: purple;
+            text-shadow: black 3px 3px 3px;
+        }
+
+        .train {
+            position: relative;
+            top: -1590px;
+            left: 200px;
+            color: purple;
+            text-shadow: black 3px 3px 3px;
+
+        }
+
+        .number {
+            position: relative;
+            top: -1550px;
+            left: 1170px;
+        }
+
+        .number2 {
+            position: relative;
+            top: -1827px;
+            left: 1520px;
+        }
+
+        .number3 {
+            position: relative;
+            top: -1570px;
+            left: 1170px;
+        }
+
+        .number4 {
+            position: relative;
+            top: -1847px;
+            left: 1520px;
+        }
+
+
 
 
         @-webkit-keyframes fade {
@@ -303,20 +413,74 @@
         <div class="header"></div>
         <img class="bg-image" src="../images/background-home-pg2.png">
         </div>
+        <h1 class="we"><strong>WE</strong></h1>
+        <h1 class="train"><strong>TRAIN</strong></h1>
+
         <section id=t-shirts>
-            <article>
-                <img class="drop" src="../images/t-shirt-1.jpg"></article>
-            <article>
-                <img class="drop2" src="../images/t-shirt-2.jpg"></article>
-            <article>
-                <img class="drop3" src="../images/t-shirt-3.jpg"></article>
-            <article>
-                <img class="drop4" src="../images/t-shirt-4.jpg"></article>
+            <header class="best-t">575Tumblings t-shirts
+            </header>
+            <section class="t-shirts">
+                <header class="best">T-shirts
+                    <p style="position: relative;left:-100px;"><mark>The best shirts in town!!!</mark></p>
+                </header>
+                <article class="productarticle">
+                    <figure>
+                        <img class="drop" src="../images/t-shirt-1.jpg">
+                    </figure>
+                    <header>
+                        <span class="productarticlename"><a href=proshop.html">T-shirt 1</a></span>
+                    </header>
+                    <p class="number">T-shirt#1</p>
+                    <p class="productarticleprice1">$10.00</p>
+                    <div class="addtocartbutton1">Add to Cart
+                    </div>
+                </article>
+            </section>
+            <article class="productarticle">
+                <figure>
+                    <img class="drop2" src="../images/t-shirt-2.jpg">
+                </figure>
+                <header>
+                    <span class="productarticlename"><a href=proshop.html">T-shirt 2</a></span>
+                </header>
+                <p class="number2">T-shirt#2</p>
+
+                <p class="productarticleprice2">$10.00</p>
+                <div class="addtocartbutton2">Add to Cart
+                </div>
+            </article>
         </section>
-
-
-
-
+        <article class="productarticle">
+            <figure>
+                <img class="drop3" src="../images/t-shirt-3.jpg">
+            </figure>
+            <header>
+                <span class="productarticlename"><a href=proshop.html">T-shirt 3</a></span>
+            </header>
+            <p class="number3">T-shirt#3</p>
+            <p class="productarticleprice3">$10.00</p>
+            <div class="addtocartbutton3">Add to Cart
+            </div>
+        </article>
+        </section>
+        <article class="productarticle">
+            <figure>
+                <img class="drop4" src="../images/t-shirt-4.jpg">
+            </figure>
+            <header>
+                <span class="productarticlename"><a href=proshop.html">T-shirt 4</a></span>
+            </header>
+            <p class="number4">T-shirt#4</p>
+            <p class="productarticleprice4">$10.00</p>
+            <div class="addtocartbutton4">Add to Cart
+            </div>
+        </article>
+        </section>
+        <footer style="text-align: center;">Our address is <address>105 Main St,NM 88260</address>
+            <p class="textcontent">All site contents is copyright<a class="mainlink"
+                    href="http://www.575Tumbling.com"></a></p>
+            <p class="smalltext">This page was generated on <time>07:41</time></p>
+        </footer>
 </body>
 
 </html>
