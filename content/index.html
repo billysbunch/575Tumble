@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Document</title>
     <style>
         * {
@@ -13,28 +12,16 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: "open sans", sans-serif;
-        }
-
-        .myslides {
-            display: none;
-        }
-
-        img {
-            vertical-align: middle;
-        }
-
         a {
             color: white;
         }
 
         .container nav {
             width: 100%;
-            height: 50px;
-            background: linear-gradient(to right, pink, purple);
-            position: fixed;
-            top: 0;
+            height: 41px;
+            background: linear-gradient(to right, #e906c1, purple);
+            position: relative;
+            top: 100px;
             left: 0;
             z-index: 999;
         }
@@ -53,7 +40,7 @@
             text-align: center;
             color: white;
             padding: 12px 0px;
-            font-size: 15px;
+            font-size: 10px;
             font-weight: bold;
             text-transform: uppercase;
             cursor: pointer;
@@ -85,7 +72,7 @@
             width: 100%;
             height: 250px;
             box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.14), -1px 0px 1px rgba(0, 0, 0, 0.14);
-            top: 100px;
+            top: -1000px;
             left: 0;
             visibility: hidden;
             opacity: 0;
@@ -115,13 +102,16 @@
 
         .logo {
             position: absolute;
-            width: 150px;
+            width: 52px;
+            left: 20px;
+            top: .5px;
         }
 
         .list {
             float: right;
         }
 
+        /*words inside of dropdown box*/
         .container nav ul li:hover ul.sub-nav a {
             text-decoration: none;
         }
@@ -129,159 +119,41 @@
         .container nav ul li ul li a {
             text-decoration: none;
             color: magenta;
-            font-size: 10px;
+            font-size: 5px;
         }
 
-        .bg-image {
+        .tumbling {
             position: relative;
-            top: -780px;
-            text-decoration: none;
-        }
-
-        .bd {
-            position: relative;
-            top: -1050px;
-            left: 275px;
-            width: 350px;
-        }
-
-        .text-on-bd {
-            position: relative;
-            top: -1450px;
-            left: 1330px;
-            font-size: 20px;
-            text-decoration: none;
-        }
-
-        .sub-nav {
-            color: magenta;
-        }
-
-        /* Slideshow container */
-        .slideshow-container {
-            max-width: 400px;
-            position: relative;
-            margin: auto;
-            top: -1300px;
-            left: 600px;
-        }
-
-        /* Caption text */
-        .text {
-            color: #f2f2f2;
-            font-size: 15px;
-            padding: 8px 12px;
-            position: absolute;
-            bottom: 8px;
-            width: 100%;
-            text-align: center;
-        }
-
-        /* Number text (1/3 etc) */
-        .numbertext {
-            color: #f2f2f2;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            top: 0;
-        }
-
-        /* The dots/bullets/indicators */
-        .dot {
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-            position: relative;
-            top: -1300px;
-            left: 600px;
-        }
-
-        .active {
-            background-color: #717171;
-        }
-
-        .we {
-            position: relative;
-            top: -1605px;
-            left: 170px;
-            color: purple;
-            text-shadow: black 3px 3px 3px;
-        }
-
-        .train {
-            position: relative;
-            top: -1595px;
-            left: 200px;
-            color: purple;
-            text-shadow: black 3px 3px 3px;
-
-        }
-
-        /* Fading animation */
-        .fade {
-            -webkit-animation-name: fade;
-            -webkit-animation-duration: 10s;
-            animation-name: fade;
-            animation-duration: 2s;
-        }
-
-        @-webkit-keyframes fade {
-            from {
-                opacity: .4
-            }
-
-            to {
-                opacity: 1
-            }
-        }
-
-        @keyframes fade {
-            from {
-                opacity: .4
-            }
-
-            to {
-                opacity: 1
-            }
-        }
-
-        /* On smaller screens, decrease text size */
-        @media only screen and (max-width: 300px) {
-            .text {
-                font-size: 11px
-            }
+            width: 100px;
         }
     </style>
 </head>
 
-</head>
-
 <body>
+    <img class="tumbling" src="../images/NoPath-removebg-preview.png">
     <header class="container">
-        <nav>
-            <img class="logo" src="../images/logo-nbg.png">
+        <nav style="position: relative;top:50px;">
+            <img class="logo" src="../images/logo11.png">
             <ul class="nav-words" style="text-shadow: black 3px 3px 3px;">
                 <li><a href="proshop.html">Pro. shop</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
                 <li><a href="calendar.html">Calendar</a></li>
-
                 <li>Classes
-                    <ul style="top: 50px;" class="sub-nav">
-                        <li><a href="tiny-tumblrs.html">Tiny Tumblers</a></li>
-                        <li><a href="beginner-to-intermediate.html">Beginners-Intermediate</a></li>
-                        <li><a href="boys.html">Boys</a></li>
-                        <li><a href="back-handspring.html">back-handspring</a></li>
-                        <li><a href="cheer.html">Cheer class</a></li>
+                    <ul style="height: 170px;top:40px;" class="sub-nav">
+                        <li><a style="position: relative;top:-10px;" href="tiny-tumblrs.html">Tiny
+                                Tumblers</a></li>
+                        <li><a style="position: relative;top:-20px;"
+                                href="beginner-to-intermediate.html">Beginners-Intermediate</a></li>
+                        <li><a style="position: relative;top:-40px;href=" boys.html">Boys</a></li>
+                        <li><a style="position: relative;top:-60px;href=" back-handspring.html">back-handspring</a>
+                        </li>
+                        <li><a style="position: relative;top:-80px;href=" cheer.html">Cheer class</a></li>
                     </ul>
                 </li>
                 <li><a href="index.html">About</a>
-                    <ul style="height: 110px; top:50px" class="sub-nav">
-                        <li><a href="about.html">my story</a></li>
-                        <li><a href="champions.html">champions</a></li>
+                    <ul style="height: 60px; top:40px" class="sub-nav">
+                        <li><a style="position: relative;top:-20px;" href="about.html">my story</a></li>
+                        <li><a style="position: relative;top:-40px;" href="champions.html">champions</a></li>
                     </ul>
                 <li><a href="news.html">News</a></li>
                 <li><a href="index.html">home</a></li>
@@ -289,75 +161,10 @@
             </ul>
         </nav>
         <div class="header"></div>
-        <img class="bg-image" src="../images/background-home-pg2.png">
-        <a href="birthday.html"><img class="bd" src="../images/birthday-party.jpg">
-            <div class="text-on-bd"><strong>Birthday parties comming soon</strong></div>
-        </a>
-        <h1 class="we"><strong>WE</strong></h1>
-        <h1 class="train"><strong>TRAIN</strong></h1>
+        <img class="bg-image" src="../images/hp-white-bg2.png">
 
     </header>
-    <div class="slideshow-container">
 
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 5</div>
-            <img src="../images/1.jpg" style="width:100%">
-            <div class="text">HARD WORK</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 5</div>
-            <img src="../images/2.jpg" style="width:100%">
-            <div class="text">BEATS TALENT</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 5</div>
-            <img src="../images/3.jpg" style="width:100%">
-            <div class="text">WHEN TALENT</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">4 / 5</div>
-            <img src="../images/4.jpg" style="width:100%">
-            <div class="text">DOES NOT</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">5 / 5</div>
-            <img src="../images/6.png" style="width:100%">
-            <div class="text">WORK HARD!!!</div>
-        </div>
-    </div>
-    <br>
-    <div style="text-align:center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
-
-
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-    </script>
 
 </body>
 
