@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link href="https://fonts.googleapis.com/css?family=roboto" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <title>Hamburger menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            height: 100%;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        .multi_color_border {
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, pink, purple);
+        }
+
+        .top_nav {
+            width: 100%;
+            height: 28.5px;
+            background: linear-gradient(to right, pink, purple);
+        }
+
+        .logo2 {
+            position: relative;
+            width: 100px;
+            left: 50px;
+            top: -4px;
+        }
+
+        .top_nav .left .search_bar input[type="text"] {
+            border: 1px black;
+            padding: 5px 10px;
+            outline: none;
+            position: relative;
+        }
+
+        .top_nav .left .search_bar input[type="text"]:focus {
+            width: 250px;
+            position: relative;
+        }
+
+        .log-on {
+            position: absolute;
+            left: 153px;
+            top: 7px;
+        }
+
+        .list {
+            font-size: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .list li a {
+            margin: 0 12px;
+            position: relative;
+            top: -25px;
+            text-decoration-line: none;
+            left: 500px;
+            color: white;
+        }
+
+
+
+        .pic {
+            width: 200px;
+            position: relative;
+            left: 380px;
+            top: 100px;
+        }
+
+        #col-1 {
+            position: relative;
+            width: 50%;
+            float: left;
+            height: 350vh;
+            background-color: rgba(128, 0, 128, 0.90);
+            z-index: 1010101010;
+            top: -14px;
+        }
+
+        #col-2 {
+            position: relative;
+            width: 500px;
+            float: left;
+            height: 350vh;
+            background-color: rgba(255, 192, 203, 0.90);
+            z-index: 1010101010;
+            top: 15x;
+            left: 476px;
+
+        }
+
+        .cart {
+            position: relative;
+            width: 220px;
+            left: -100px;
+            top: 100px;
+        }
+
+        #w {
+            position: relative;
+            top: -160px;
+            left: -34px;
+            color: pink;
+        }
+
+        #e {
+            position: relative;
+            top: -204px;
+            left: 0px;
+            color: purple;
+
+        }
+
+        .train {
+            position: relative;
+            top: -120px;
+            left: 130px;
+            color: purple;
+        }
+
+        #roy {
+            position: relative;
+            top: -35px;
+            left: -70px;
+            color: pink;
+        }
+
+        #alty {
+            position: relative;
+            top: -79px;
+            color: purple;
+        }
+
+        #cheer2 {
+            position: relative;
+            width: 250px;
+            top: -50px;
+            left: -450px;
+        }
+
+        #cheer3 {
+            position: relative;
+            width: 250px;
+            top: -250px;
+            left: -140px;
+
+        }
+
+        #cheer4 {
+            position: relative;
+            width: 250px;
+            top: -450px;
+            left: 180px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="multi_color_border"></div>
+    <div class="top_nav">
+        <img class="logo2" src="../images/NoPath-removebg-preview.png">
+
+        <input class="log-on" type="text" placeholder="Log-on">
+    </div>
+    <div class="right">
+        <ul class="list" style="list-style-type:none;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="direction.html">Directions</a></li>
+            <li><a href="#">575-704-1016</a></li>
+            <li><a href="enroll-now.html">Enroll Now</a></li>
+            <li><a href="private-lessons.html">Private Lessons</a></li>
+        </ul>
+    </div>
+
+    <div id="col-1">
+
+        <div id="col-2">
+            <div> <img class="cart" src="../images/cartwheel.jpg">
+            </div>
+            <div class="menu-wrap">
+                <input type="checkbox" class="toggler">
+                <div class="hamburger">
+                    <div></div>
+                </div>
+                <div class="menu">
+                    <div>
+                        <div>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="news.html">News</a></li>
+                                <li><a href="gear.html">Gear</a></li>
+                                <li><a href="classes.html">Classes</a></li>
+                                <li><a href="calendar.html">Calendar</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1 id="w">W</h1>
+                <h1 id="e">E</h1>
+            </div>
+            <div>
+                <h1 class="train">TRAIN</h1>
+            </div>
+            <div>
+                <h1 id="roy">ROY</h1>
+                <h1 id="alty">ALTY</h1>
+            </div>
+            <img id="cheer2" src="../images/2.jpg">
+            <img id="cheer3" src="../images/3.jpg">
+            <img id="cheer4" src="../images/4.jpg">
+            <script src="../js/home.js"></script>
+            <script src="../js/utils.js"></script>
+
+</body>
+
+</html>

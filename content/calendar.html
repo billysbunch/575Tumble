@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=roboto" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <title>Hamburger menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            height: 100%;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        .multi_color_border {
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, pink, purple);
+        }
+
+        .top_nav {
+            width: 100%;
+            height: 28.5px;
+            background: linear-gradient(to right, pink, purple);
+        }
+
+        .logo2 {
+            position: relative;
+            width: 100px;
+            left: 50px;
+            top: -4px;
+        }
+
+        .top_nav .left .search_bar input[type="text"] {
+            border: 1px black;
+            padding: 5px 10px;
+            outline: none;
+            position: relative;
+        }
+
+        .top_nav .left .search_bar input[type="text"]:focus {
+            width: 250px;
+            position: relative;
+        }
+
+        .log-on {
+            position: absolute;
+            left: 153px;
+            top: 7px;
+        }
+
+        .list {
+            font-size: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .list li a {
+            margin: 0 12px;
+            position: relative;
+            top: -25px;
+            text-decoration-line: none;
+            left: 500px;
+            color: white;
+        }
+
+
+
+        .pic {
+            width: 200px;
+            position: relative;
+            left: 380px;
+            top: 100px;
+        }
+
+        #col-1 {
+            position: relative;
+            width: 50%;
+            float: left;
+            height: 500vh;
+            background-color: rgba(128, 0, 128, 0.90);
+            z-index: 1010101010;
+            top: -14px;
+        }
+
+        #col-2 {
+            position: relative;
+            width: 500px;
+            float: left;
+            height: 500vh;
+            background-color: rgba(255, 192, 203, 0.90);
+            z-index: 1010101010;
+            top: 0px;
+            left: 476px;
+        }
+
+        .cart {
+            position: relative;
+            width: 220px;
+            left: -100px;
+            top: 100px;
+        }
+
+        #month1 {
+            position: relative;
+            left: -100px;
+            color: pink;
+        }
+
+        #month2 {
+            position: relative;
+            top: -43.9px;
+            color: purple;
+        }
+
+        #line {
+            position: relative;
+            left: -250px;
+            top: -40px;
+            border: 2px solid hotpink;
+        }
+
+        .day {
+            position: relative;
+            left: -450px;
+            color: hotpink;
+        }
+
+        .bar {
+            position: relative;
+            left: -500px;
+            border: 1px solid pink;
+        }
+
+        .bar2 {
+            position: relative;
+            top: -24px;
+            border: 1px solid purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="multi_color_border"></div>
+    <div class="top_nav">
+        <img class="logo2" src="../images/NoPath-removebg-preview.png">
+
+        <input class="log-on" type="text" placeholder="Log-on">
+    </div>
+    <div class="right">
+        <ul class="list" style="list-style-type:none;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="direction.html">Get Directions</a></li>
+            <li><a href="#">575-704-1016</a></li>
+            <li><a href="enroll-now.html">Enroll Now</a></li>
+            <li><a href="private-lessons.html">Private Lessons</a></li>
+        </ul>
+    </div>
+
+    <div id="col-1">
+        <div id="col-2">
+            <div>
+            </div>
+            <h1 id="month1">Augus</h1>
+            <h1 id="month2">t 2020</h1>
+            <hr id="line">
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+            <h3 class="day" id="date">Sat. 9/1/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Sun. 9/2/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Mon. 9/3/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Tues. 9/4/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Wed. 9/5/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Thurs. 9/6/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Fri. 9/7/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Sat. 9/8/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Sun. 9/9/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p>Payments due</p>
+
+            <h3 class="day" id="date">Mon. 9/10/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Tues. 9/11/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Wed. 9/12/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Thurs. 9/13/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Fri. 9/14/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Sat. 9/15/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Sun. 9/16/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Mon. 9/17/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Tues. 9/18/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Wed. 9/19/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Thurs. 9/20/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Fri. 9/21/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Sat. 9/22/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Sun. 9/23/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Mon. 9/24/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Tues. 9/25/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Wed. 9/26/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Thurs. 9/27/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Fri. 9/28/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Sat. 9/29/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p></p>
+
+            <h3 class="day" id="date">Sun. 9/30/2020</h3>
+            <hr class="bar"><br>
+            <hr class="bar2">
+            <p>reminder choreography Sept. 25-27</p>
+
+            <h3 class="day" id="date">Mon. 9/31/2020</h3>
+            <hr class="bar">
+            <hr style="position: relative;top:-2px;" class="bar2">
+            <div class="menu-wrap">
+                <input type="checkbox" class="toggler">
+                <div class="hamburger">
+                    <div></div>
+                </div>
+                <div class="menu">
+                    <div>
+                        <div>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="news.html">News</a></li>
+                                <li><a href="gear.html">Gear</a></li>
+                                <li><a href="classes.html">Classes</a></li>
+                                <li><a href="calendar.html">Calendar</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+</body>
+
+</html>
