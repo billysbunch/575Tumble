@@ -3,6 +3,6 @@ function showMessage(message) {
 }
 showMessage("$15.00");
 let price = "20.00",
-  name = "purple sassy",
+  name = "15.00",
   discounted = name;
 showMessage(discounted);
